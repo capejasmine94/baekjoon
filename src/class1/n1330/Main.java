@@ -10,16 +10,12 @@ public class Main {
         int A = sc.nextInt();
         int B = sc.nextInt();
 
-        switch (Integer.compare(A, B)){
-            case 1:
-                System.out.println(">");
-                break;
-            case -1:
-                System.out.println("<");
-                break;
-            case 0:
-                System.out.println("==");
-                break;
+        if (A > B) {
+            System.out.println(">");
+        } else if (A < B) {
+            System.out.println("<");
+        } else {
+            System.out.println("==");
         }
     }
 }
