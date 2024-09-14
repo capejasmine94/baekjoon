@@ -10,13 +10,8 @@ public class Main {
         int A = sc.nextInt();
         int B = sc.nextInt();
 
-        if (A > B) {
-            System.out.println(">");
-        } else if (A < B) {
-            System.out.println("<");
-        } else {
-            System.out.println("==");
-        }
+        String result = (A > B) ? ">" : (A < B) ? "<" : "==";
+        System.out.println(result);
     }
 }
 /*문제
