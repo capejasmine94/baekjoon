@@ -5,19 +5,32 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
-        int sum = 0;
         Scanner sc = new Scanner(System.in);
-        String n = sc.nextLine();
 
-        for (int i = 0; i < n.length(); i++) {
-            int digit = n.charAt(i) - '0';
-            int square = digit * digit;
-            sum += square;
+        int[] digits = new int[5];
+        for (int i = 0; i < digits.length; i++) {
+            digits[i] = sc.nextInt();
         }
 
-        int result = sum % 10;
-        System.out.println(result);
+        int sumOfSquares = 0;
+        for (int i = 0; i < digits.length; i++) {
+            sumOfSquares += (digits[i] * digits[i]);
+        }
+        int num = sumOfSquares % 10;
+        System.out.println(num);
+
+//        int sum = 0;
+//        Scanner sc = new Scanner(System.in);
+//        String n = sc.nextLine();
+//
+//        for (int i = 0; i < n.length(); i++) {
+//            int digit = n.charAt(i) - '0';
+//            int square = digit * digit;
+//            sum += square;
+//        }
+//
+//        int result = sum % 10;
+//        System.out.println(result);
 
     }
 }
